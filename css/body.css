@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --main-c: #318eb7ba;
+  --border-r: 2rem
+}
+
+.html *{
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-size: 1.1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+h1{
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.idea-section{
+  height: 70vh;
+  background: linear-gradient(to right, rgba(44, 106, 117, 0.916), hsla(192, 52%, 94%, 0.259));
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 15%;
+}
+
+/** hero section*/
+.hero-section {
+  height: 70vh;
+  background: linear-gradient(to bottom, rgba(44, 106, 117, 0.916), #e9f5f842);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 15%;
+}
+
+
+.wrap-hero-section{
+  max-width: 600px;
+  padding: 900px 10px;
+  
+}
+.destacado {
+  text-decoration: underline;
+  color: #43c7ff;
+
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section h3{
+  font-weight: 500;
+  font-size: 30px;
+}
+.wrap-hero-section {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-section .titulo {
+  margin-top: 20px;
+}
+
+.wrap-cta button {
+  padding: 1.5rem 0;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #ffa6019f;
+  border: 1px  #ffa6019f;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.wrap-cta button:hover {
+  background-color: #ffa701;
+  color: #ededed;
+}
+
+/**teconolgias**/ 
+.tecnologias .row{
+  align-items: center;
+  height: 50vh;
+  margin: 5% 0;
+}
+
+.tecnologias h2{
+  text-align: center;
+  margin-top: 10px;
+  color: #43c7ff;
+}
+.tecnologias p{
+  font-weight: 300;
+}
+
+.tecnologias .container {
+
+  align-items: center;
+}
+
+.tecnologias img {
+  cursor: pointer;
+
+}
+
+.hiden-text {
+  display: none;
+}
+
+.tecnologias p{
+  padding: 17px;
+  margin-top: 10px;
+  justify-content: center;
+  text-shadow: #1f9fb543;
+}
+
+.tecnologias img:hover{
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .tecnologias h2 {
+    font-size: 25px;
+  }
+  .about-us h2 {
+    font-size: 25px;
+  }
+  .google-text 
+  .dart-text
+  .flutter-text
+  .firebase-text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+
+
+/** the idea **/
+.idea-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrap-idea {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-column {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.image-column2 {
+  flex: 1;
+  margin-top: 20px;
+  margin-right: 20px; 
+}
+
+.text-column {
+  flex: 1;
+  justify-content: right;
+}
+.text-column2 {
+  flex: 1;
+  justify-content: right;
+}
+.idea-section h2 {
+  margin-bottom: 10px;
+}
+.text-column h2 {
+  color: #ffa701;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .column-wrap {
+      flex-direction: column;
+  }
+}
+
+/**arrow*/
+.arrow-button {
+  position: absolute;
+  top: 210%;
+  right: 30px;
+  font-size: 24px;
+  color: #0000002c;
+  background-color: rgba(226, 226, 226, 0.73); /* Fondo ligeramente más oscuro con transparencia */
+  border: none; /* Elimina el borde */
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  padding: 15px; /* Añade espacio interior al botón */
+  cursor: pointer;
+
+}
+.arrow-button:hover{
+  transform: scale(1.1);
+}
+
+/**about us*/
+.about-us {
+  height: 50vh;
+  text-align: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.about-us .row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us h2{
+  text-align: center;
+  margin-top: 10px;
+  color: #43c7ff;;
+}
+
+.about-us img:hover{
+  transform: scale(1.1);
+}

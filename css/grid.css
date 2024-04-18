@@ -1,0 +1,123 @@
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class *="col-"] {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.tecnologia img {
+    height: auto;
+    
+    align-items: center;
+}
+
+
+.tecnologia img {
+    cursor: pointer;
+  }
+
+/*movil*/
+@media only screen and (max-width:600px){
+    .col-xs-1{
+        width: 25%
+    }
+    .row img {
+        max-width: 80px;
+    }
+
+}
+
+/*tablet*/
+@media only screen and (min-width:600px){
+    .col-s1{
+        width: 25%
+    }
+    
+    .col-s2{
+        width: 50%
+    }
+    .col-s3{
+        width: 75%;
+    }
+    
+    .col-s4{
+        width: 100%;
+    }
+    .row img {
+        max-width: 120px;
+    }
+}
+
+/*escritorio*/
+@media only screen and (min-width:768px){
+    .col-m1{
+        width: 25%;
+        align-items: center;
+    }
+    
+    .col-m2{
+        width: 50%
+    }
+    .col-m3{
+        width: 75%;
+    }
+    
+    .col-m4{
+        width: 100%;
+    }
+    .row img {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .col-l1{
+        width: 25%
+    }
+    
+    .col-l2{
+        width: 50%
+    }
+    .col-l3{
+        width: 75%;
+    }
+    
+    .col-l4{
+        width: 100%;
+    }
+    .row img {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    
+    .col-xl1{
+        width: 25%
+    }
+    
+    .col-xl2{
+        width: 50%
+    }
+    .col-xl3{
+        width: 75%;
+    }
+    
+    .col-xl4{
+        width: 100%;
+    }
+    .row img {
+        max-width: 200px;
+    }
+}
+
