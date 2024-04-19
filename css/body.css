@@ -235,10 +235,10 @@ img {
   right: 30px;
   font-size: 24px;
   color: #0000002c;
-  background-color: rgba(226, 226, 226, 0.73); /* Fondo ligeramente más oscuro con transparencia */
-  border: none; /* Elimina el borde */
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  padding: 15px; /* Añade espacio interior al botón */
+  background-color: rgba(226, 226, 226, 0.73);
+  border: none; 
+  border-radius: 50%; 
+  padding: 15px; 
   cursor: pointer;
 
 }
