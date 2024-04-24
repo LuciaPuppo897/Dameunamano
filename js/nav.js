@@ -1,5 +1,7 @@
 function openNav(){
-    document.getElementById("mobile-menu").style.width ="50%";
+
+  const navLinks = document.getElementsByClassName('nav-links')[0]
+  navLinks.classList.toggle('open')
 }
 
 function closeNav(){

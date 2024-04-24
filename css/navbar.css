@@ -1,0 +1,174 @@
+header{
+	width: 100vw;
+	height: var(--navbar-height);
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 10%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #1b3039;
+}
+
+header .logo img {
+	height: 3.1rem;
+	width: auto;
+	transition: all 0.3s;
+}
+
+header .logo img:hover{
+	transform: scale(1.05);
+}
+
+.nav-links {
+	list-style: none;
+	transition: transform ease .5s;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0 1.5rem;
+}
+
+.nav-links li:hover {
+	transform: scale(1.1);
+}
+
+.nav-links a {
+	font-size: 700;
+	color: var(--bg-color);
+}
+
+.nav-links li a:hover,
+.overlay a:hover  {
+	color: #318eb7ba;
+}
+
+.menu, .close-btn {
+	display: none;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu{
+	margin-left: 20px;
+	font-weight: 700;
+	color: #1b3039;
+	padding: 9px 25px;
+	background: #eceff1;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.menu:hover{
+	background-color: #e2f1f8;
+	color: #318eb7ba;
+	transform: scale(1.05);
+}
+
+.open{
+	transform: translateX(0) !important;
+}
+
+@media screen and (max-width: 800px){
+	
+		.menu, .close-btn {
+			display: block;
+		}
+		
+		.close-btn{
+			position: absolute;
+			top: .5rem;
+			right: .5rem;
+			background-color: transparent;
+			border: none;
+			color: var(--bg-color);
+			font-size: 3rem;
+		}
+
+		.nav-links{
+			display: flex;
+			width: 50%;
+			height: 100vh;
+			transform: translateX(-100%);
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			background-color: #1b3039e3;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.nav-links a{
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+}
+
+/*Nav Mobile*/
+
+/* header a{
+		text-decoration: none;
+}
+
+header .overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		background-color: #21313ff2;
+		overflow: hidden;
+		transition: all 0.3s ease 0s;
+}
+
+header .overlay .overlay-content{
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+}
+
+header .overlay a{
+		padding: 15px;
+		font-size: 20px;
+		display: block;
+		transition: all 0.3s ease 0s;
+		font-weight: 500;
+		color: #eceff1;
+}
+
+header .overlay a:hover,
+header .overlay a:focus{
+		color: #318eb7ba;
+}
+
+header .overlay .close{
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 35px;
+}
+
+@media screen and (max-height:450px) {
+		header .overlay a{
+				font-size: 20px;
+		}
+		header .overlay .close{
+				font-size: 40px;
+				top: 15px;
+				right: 35px;
+		}
+} */
