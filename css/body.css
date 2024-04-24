@@ -6,6 +6,7 @@
 }
 
 .html *{
+background-color: #ededed;
 margin: 0;
 padding: 0;
 font-family: 'Montserrat', sans-serif;
@@ -44,9 +45,6 @@ h4{
 
 .idea-section{
   height: 70vh;
-  background: linear-gradient(to right, rgba(44, 106, 117, 0.916), hsla(192, 52%, 94%, 0.259));
-  background-position: center;
-  background-size: cover;
   display: flex;
   align-items: center;
   padding: 15%;
@@ -55,7 +53,6 @@ h4{
 /** hero section*/
 .hero-section {
   height: 70vh;
-  background: linear-gradient(to bottom, rgba(44, 106, 117, 0.916), #e9f5f842);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -231,7 +228,7 @@ img {
 /**arrow*/
 .arrow-button {
   position: absolute;
-  top: 210%;
+  top: 250%;
   right: 30px;
   font-size: 24px;
   color: #0000002c;
