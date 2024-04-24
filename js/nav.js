@@ -17,18 +17,16 @@ function mostrarTexto(className) {
     });
 }
 
-var currentFeature = 1; // Indica el índice del feature actual
+var currentFeature = 1; 
 
 function nextFeature() {
-  // Actualiza el índice del feature
+
   currentFeature++;
   
-  // Limita el índice para que no exceda el número total de features
   if (currentFeature > 3) {
     currentFeature = 1;
   }
   
-  // Cambia dinámicamente la imagen y el texto según el índice actual
   var imageSrc;
   var textContent;
   
