@@ -56,52 +56,107 @@ h4{
   background-position: center;
   background-size: cover;
   display: flex;
+  height: 100vh;
   align-items: center;
-  padding: 15%;
+  padding-top: var(--navbar-height);
 }
 
-
-.wrap-hero-section{
-  max-width: 600px;
-  padding: 900px 10px;
-  
+.wrap-home-section{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 1rem;
+  padding: 10%;
 }
-.destacado {
+
+.wrap-home-section h1 {
+  font-size: 5rem;
+}
+
+.home-btns{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.highlight {
   text-decoration: underline;
   color: #43c7ff;
-
-}
-.hero-section {
-  display: flex;
-  justify-content: center;
 }
 
-.hero-section h3{
+.home-section h3{
   font-weight: 500;
   font-size: 30px;
 }
-.wrap-hero-section {
-  width: 100%;
-  max-width: 1200px;
-}
 
-.hero-section .titulo {
-  margin-top: 20px;
-}
-
-.wrap-cta button {
-  padding: 1.5rem 0;
-  margin-top: 30px;
-  padding: 10px 30px;
-  background: #ffa6019f;
-  border: 1px  #ffa6019f;
+.wrap-cta{
+  text-align: center;
+  width: 15rem;
+  display: block;
+  background: #ffa601;
+  border: 1px  #ffa601;
   border-radius: 50px;
   cursor: pointer;
+  padding: 1rem 3rem;
   transition: background-color 0.3s ease;
 }
-.wrap-cta button:hover {
+
+.wrap-cta:hover {
   background-color: #ffa701;
   color: #ededed;
+}
+
+/* Slider box styles */
+
+.slider_box {
+  flex: 1;
+  min-width: 50%;
+  background-color: red;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_box::after{
+  content: '';
+  background: linear-gradient(to top, #1b3039e5, transparent);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider li {
+  width: 25%;
+  list-style: none;
+  position: relative;
+}
+
+.slider_box .ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider div {
+  width: 100%;
+  min-height: calc(100vh - var(--navbar-height));
+  background-image: url('../imagenes/albanil.png');
+  background-size: cover;
 }
 
 /**teconolgias**/ 
@@ -265,3 +320,63 @@ img {
 .about-us img:hover{
   transform: scale(1.1);
 }
+
+
+/*sliderbox*/
+.home-section {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap-home-section {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.conteiner {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.column1 {
+  flex: 1;
+}
+
+.column2 {
+  flex: 1;
+}
+
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+@media(max-width:991px){
+  
+  .slider_box {
+      width: 50%;
+      
+  }
+  .slider li {
+      width: 50%;
+      display: flex;
+      
+      align-items: end;
+  }
+  .content {
+      flex-direction: column;
+  }
+}    
