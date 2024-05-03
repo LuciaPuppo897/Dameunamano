@@ -16,11 +16,11 @@
         </a>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Idea</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">UX/UI</a></li>
+                <li><a href="#idea-id">Idea</a></li>
+                <li><a href="#tecnologias">Tech</a></li>
+                <li><a href="#ux-ui">UX/UI</a></li>
                 <li><a href="#">Demo</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#about-us">About us</a></li>
                 <button onclick="openNav()" class="close-btn">
                     &times;
                 </button>
@@ -73,8 +73,8 @@
     
     
 
-    <section class="idea-section">
-        <div class="wrap-idea">
+    <section class="idea-section" id="idea-id">
+       <div class="wrap-idea">
             <div class="column-wrap">
                 <div class="image-column2">
                     <img src="imagenes/albanil.png" alt="albañil">
@@ -93,14 +93,16 @@
                     </p>
                     <button class="arrow-button" onclick="nextFeature()">▶</button>
                 </div>
+                
             </div>
+            
         </div>
     </section>
     
 
-    <section class="tecnologias">
-        <h2>Tecnologias</h2>
-        <div class="conteiner">
+    <section class="tecnologias" id="tecnologias">
+        <h2>Technologies</h2>
+        <div class="conteiner-tech">
             <div class="row">
                 <div class="col-s1 col-m1"  onclick="mostrarTexto('firebase-text')">
                     <img src="imagenes/firebase.png" alt="logo de firebase">
@@ -130,7 +132,7 @@
         </div>
     </section>
     
-    <section class="idea-section">
+    <section class="idea-section" id="ux-ui">
         <div class="wrap-idea">
             <h2>Features</h2>
             <div class="column-wrap">
@@ -154,21 +156,41 @@
         </div>
     </section>
     
-    <section class ="about-us">
+    <section class ="about-us" id="about-us">
+        <h2>About us</h2>
         <div class="conteiner">
-            <h2>About us</h2>
             <div class="row">
                 <div class="col-s1 col-m1 col-l1 col-xl1">
                     <img src="imagenes/Lucía Puppo 2 (1).jpg" alt="">
+                    <article class="info">
+                        <h4>Lucia Puppo</h4> 
+                        <p>Full stack Project manager</p>
+                        <img src="imagenes/linkedin.png" alt="linkedIn">
+                    </article>
                 </div>
                 <div class="col-s1 col-m1 col-l1">
                     <img src="imagenes//esteban.jpeg" alt="">
+                    <article class="info">
+                        <h4>Esteban Silvera</h4> 
+                        <p>Full stack developer</p>
+                        <img src="imagenes/linkedin.png" alt="linkedIn">
+                    </article>
                 </div>
                 <div class="col-s1 col-m1"> 
                     <img src="/imagenes/yezta.jpeg" alt="">
+                    <article class="info">
+                        <h4>Yeztabeth Hernandez</h4> 
+                        <p>Backend developer</p>
+                        <img src="imagenes/linkedin.png" alt="linkedIn">
+                    </article>
                 </div>
                 <div class="col-s1 col-m1"> 
                     <img src="/imagenes/carlos.jpeg" alt="logo de dart">
+                    <article class="carlos">
+                        <h4>Carlos Franco</h4> 
+                        <p>Backend developer</p>
+                        <img src="imagenes/linkedin.png"alt="linkedIn">
+                    </article>
                 </div>
             </div>
         </div>
