@@ -43,33 +43,30 @@ h4{
   font-weight: 400;
 }
 
-.idea-section{
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  padding: 15%;
-}
 
-/** home section*/
+/**################################## Home Section #######################################*/
 .home-section {
-  
   height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
-  
   align-items: center;
   padding-top: var(--navbar-height);
 }
 
 .wrap-home-section{
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  flex: 2;
   gap: 1rem;
-  padding: 10%;
+  z-index: 2;
+}
+
+.wrap-home-section > div{
+  width: 100%;
+  padding: 0 10%;
 }
 
 .wrap-home-section h1 {
@@ -83,7 +80,7 @@ h4{
   justify-content: center;
   flex-direction: row;
   gap: 1rem;
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 .highlight {
@@ -100,8 +97,8 @@ h4{
   text-align: center;
   width: 15rem;
   display: block;
-  background: #ffa601;
-  border: 1px  #ffa601;
+  background: #1b3039e5;
+  border: 1px  #1b3039e5;
   border-radius: 50px;
   color: black;
   cursor: pointer;
@@ -114,11 +111,10 @@ h4{
   color: #ededed;
 }
 
-/* Slider box styles */
+/**################################## Sliderbox #######################################*/
 
 .slider_box {
   flex: 1;
-  min-width: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -135,7 +131,6 @@ h4{
 
 .slider {
   display:flex ;
-
   width: 400%;
   animation: slide 20s infinite alternate ease-in-out;
 }
@@ -163,6 +158,8 @@ h4{
 @media screen and (max-width: 900px) {
   .home-section {
     flex-direction: column;
+    height: auto;
+    margin-bottom: auto;
   }
   .slider_box {
     display: none;
@@ -181,8 +178,8 @@ h4{
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 0;
-    margin-top: auto;
+    padding: 10px;
+    margin-top: 1rem;
     margin-left: 2.5rem;
     font-size: 14px;
   }
@@ -196,10 +193,144 @@ h4{
     padding: 0.5rem 1rem;
   }
 }
-/**teconolgias**/ 
+/**################################## The idea #######################################*/
+
+.idea-section{
+  min-height: 90vh;
+  align-items: center;
+  padding: 15% 5%;
+}
+
+.wrap-idea {
+  display: flex;
+  max-width: 75rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #edededdc;
+  border-radius: 20px;
+  padding: 0 5%;
+  background-image: url('../imagenes/fondo.png');
+  background-size:contain;
+  background-repeat:round;
+  background-position: 100%;
+  background-blend-mode: soft-light;
+
+}
+
+.column-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+.image-column {
+  flex: 1;
+}
+.image-column2{
+  flex: 1;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.text-features{
+  flex: 1;
+  padding-left: 2%;
+}
+.text-idea {
+  flex: 1;
+  padding-left: 5%;
+}
+.wrap-idea h2 {
+  color: #43c7ff;
+}
+.idea-section h2 {
+  margin-bottom: 0,7rem;
+}
+.image-idea {
+  max-width: 50%
+}
+@media only screen and (max-width: 600px) {
+  .column-wrap {
+      flex-direction: column;
+  }
+
+  .wrap-idea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .idea-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-features{
+    flex: 1;
+    justify-content: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  .image-column2 {
+    margin-bottom: 1%;
+  }
+
+  .idea-section{
+    min-height: 50vh;
+    align-items: center;
+    padding: 15% 5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .column-wrap {
+      flex-direction: column;
+  }
+
+  .wrap-idea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .idea-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-features{
+    flex: 1;
+    justify-content: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  .image-column2 {
+    margin-bottom: 1%;
+  }
+  .idea-section{
+    min-height: 50vh;
+    align-items: center;
+    padding: 15% 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .idea-section{
+      min-height: 50vh;
+      align-items: center;
+      padding: 15% 5%;
+    }
+}
+@media only screen and (max-width: 360px) {
+  .idea-section{
+    min-height: 50vh;
+    align-items: center;
+    padding: 15% 5%;
+    display: flex;
+  }
+}
+/**################################## Tecnologias #######################################*/
 
 .tecnologias {
-  height: 100vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -232,10 +363,7 @@ h4{
   cursor: pointer;
 
 }
-.col-s1,
-.col-m1 {
-  display: block;
-}
+
 .hiden-text {
   display: none;
 }
@@ -248,11 +376,10 @@ h4{
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .tecnologias h2 {
     font-size: 25px;
   }
-
   .google-text 
   .dart-text
   .flutter-text
@@ -260,79 +387,30 @@ h4{
     font-size: 1.2rem;
     font-weight: 400;
   }
-
-}
-
-
-
-/** the idea **/
-.idea-section {
-  height: 100vh;
-}
-
-.wrap-idea {
-  display: flex;
-  max-width: 75rem;
+ .tecnologias {
   flex-direction: column;
-  align-items: center;
+ }
 }
-
-.column-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  width: 100%;
-}
-
-.image-column {
-  flex: 1;
-  margin-right: 1.25rem; 
-}
-
-.image-column2 {
-  flex: 1;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-right: 1.25rem; 
-}
-
-.text-column {
-  flex: 1;
-  justify-content: right;
-}
-.text-column2 {
-  flex: 1;
-  justify-content: right;
-}
-.wrap-idea h2 {
-  color: #43c7ff;
-}
-.idea-section h2 {
-  margin-bottom: 0,7rem;
-}
-.text-column h2 {
-  color: #ffa701;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .column-wrap {
-      flex-direction: column;
-  }
-  .idea-section{
-    height: 160vh;
-
+@media screen and (max-width: 600px) {
+  .tecnologias {
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.25rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .tecnologias {
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.25rem;
+  }}
 
 /**arrow*/
 .arrow-button {
-  position: absolute;
   top: 400%;
   right: 30px;
   font-size: 24px;
@@ -348,7 +426,20 @@ img {
   transform: scale(1.1);
 }
 
-/**about us*/
+@media screen and (max-width: 600px) {
+  .arrow-button {
+  max-width: 20px; 
+  background-color:rgba(36, 113, 181, 0);
+  cursor: pointer;
+  }
+
+.arrow-button:hover{
+  transform: scale(1.1);
+}
+  }
+
+
+/**################################## About us #######################################*/
 .about-us {
   height: 50vh;
   text-align: center;
@@ -357,30 +448,10 @@ img {
   position: relative;
 }
 
-.about-us .row{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .about-us h2{
   text-align: center;
   margin-top: 10px;
   color: #43c7ff;;
-}
-
-
-.about-us .col-s1 {
-  position: relative;
-}
-
-.about-us article {
-  display: none;
-  position: absolute;
-  bottom: 0; /*arriba de las imagenes*/
-  left: 0;
-  background: linear-gradient(to top, #1b3039e5, transparent);
-  z-index: 1;
-  flex-direction: column;
 }
 
 .about-us article h4 {
@@ -393,6 +464,7 @@ img {
   font-size: 1rem;
   font-weight: 300;
 }
+
 .about-us article img {
   width: 20px;
   height: 20px;
@@ -400,25 +472,62 @@ img {
   margin-right: 0;
 }
 
-.about-us info {
-
-  padding: 40;
-}
-
-.members-card{
-  position: relative;
-}
-
-.members-card > img{
-  object-fit: cover;
-}
-
-.about-us .col-s1:hover article {
-  text-align:start;
+.members-card-wrapper{
   display: flex;
-  padding: 50;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
+.member-card{
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0; /*arriba de las imagenes*/
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .1rem;
+  background: linear-gradient(to top, #1b3039e5, transparent);
+  z-index: 1;
+  padding: 10%;
+  width: 100%;
+  max-height: 100%;
+  transition: opacity .3s ease;
+}
+
+.member-card:hover .member-info{
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 600px) 
+{
+.conteiner{
+  display: flex;
+  justify-content: center;
+  
+}
+.members-card-wrapper {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+  max-width: 250px;
+  justify-content: center;
+}
+}
 
 
 /*sliderbox*/
@@ -432,7 +541,6 @@ img {
   max-width: 75rem;
 }
 
-
 .content {
   display: flex;
   flex: 1;
@@ -445,7 +553,6 @@ img {
 .column2 {
   flex: 1;
 }
-
 
 @keyframes slide {
   0% {margin-left: 0;}
